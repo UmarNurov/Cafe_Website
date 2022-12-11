@@ -41,7 +41,7 @@ const Header = () => {
                     </h2>
                 </div>
                 <div className="nav__menu" ref={menuRef}>
-                    <div className="nav__list__wrapper d-flex align-item-center gap-5">
+                    <div className="nav__list__wrapper d-flex align-items-center gap-5">
                         <ul className="nav__list">
                             {navLinks.map((item, index) => (
                                 <li className="nav__item" key={index}>

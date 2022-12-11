@@ -23,7 +23,7 @@ const {title, imgUrl, price} = props.item
 
             <h6>{title}</h6>
 
-            <div className='d-flex align-item-center justify-content-between'>
+            <div className='d-flex align-items-center justify-content-between'>
                 <span className='price d-flex align-item-center'>Price: $<span>{price}</span></span>
                 <span className='shopping__icon'><i class="ri-shopping-cart-line"></i></span>
             </div>
