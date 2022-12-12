@@ -19,7 +19,7 @@ const Home = () => {
     <MenuPack />
     <Testimonials />
     <Download />
-    <Footer />
+    <Footer />  
   </Fragment>
   );
 }

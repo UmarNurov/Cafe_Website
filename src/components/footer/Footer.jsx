@@ -72,7 +72,7 @@ const Footer = () => {
                         </ListGroup>
                     </Col>
 
-                    <Col lg='2' md='4' sm='6'>
+                    <Col lg='3' md='4' sm='6'>
                         <h5 className="footer__link-title">
                             Quick links
                         </h5>
@@ -87,7 +87,7 @@ const Footer = () => {
                         </ListGroup>
                     </Col>
 
-                    <Col lg='4' md='4' sm='6'>
+                    <Col lg='3' md='4' sm='6'>
                         <h5 className="footer__link-title">
                             Contact
                         </h5>
@@ -104,6 +104,15 @@ const Footer = () => {
                                 <i class="ri-phone-line"></i> +xxx-xx-xxx-xxxx {" "}
                             </ListGroupItem>
                         </ListGroup>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+        <div className="footer__bottom">
+            <Container>
+                <Row>
+                    <Col lg='12'>
+                        <p>Copyrights 2022, developed by Umar Nurov. All rights reserved</p>
                     </Col>
                 </Row>
             </Container>
