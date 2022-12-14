@@ -1,27 +1,28 @@
 import React, {useRef} from 'react';
 import "./header.css"
 import {Container} from 'reactstrap';
+import logo from "../../../src/logo.png"
 
 const navLinks = [
     {
         display: 'Home',
-        url: '#'
+        url: '#home'
     },
     {
         display: 'About',
-        url: '#'
+        url: '#about'
     },
     {
         display: 'Menu',
-        url: '#'
+        url: '#menu'
     },
     {
         display: 'Recipes',
-        url: '#'
+        url: '#recipes'
     },
     {
         display: 'Contact',
-        url: '#'
+        url: '#conact'
     },
 ]
 
@@ -37,7 +38,7 @@ const Header = () => {
             <div className="navigation">
                 <div className="logo">
                     <h2 className='d-flex align-items-center gap-1'>
-                        <span><i class="ri-restaurant-2-line"></i></span> Chef Food
+                        <img src={logo} alt="" /> 
                     </h2>
                 </div>
                 <div className="nav__menu" ref={menuRef}>
