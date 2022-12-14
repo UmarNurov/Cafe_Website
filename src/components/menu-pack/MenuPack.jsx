@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react'
 import "./menu-pack.css"
 import {Container, Row, Col} from "reactstrap"
 import ProductCard from '../product-card/ProductCard'
-import { breakfastProducts, firstFoodProducts, secondFoodProducts, mangalProducts, coffeeProducts } from '../../assets/fake-data/products'
+import { breakfastProducts, firstFoodProducts, secondFoodProducts, mangalProducts, saladProducts, pizzaProducts, dessertProducts, drinkProducts } from '../../assets/fake-data/products'
 
 const MenuPack = () => {
 
@@ -26,10 +26,18 @@ useEffect(()=>{
     if(filter === 'MANGAL'){
         setProducts(mangalProducts)
     }
-    if(filter === 'COFFEE'){
-        setProducts(coffeeProducts)
+    if(filter === 'SALAD'){
+        setProducts(saladProducts)
     }
-
+    if(filter === 'PIZZA'){
+        setProducts(pizzaProducts)
+    }
+    if(filter === 'DESSERT'){
+        setProducts(dessertProducts)
+    }
+    if(filter === 'DRINK'){
+        setProducts(drinkProducts)
+    }
 
 }, [filter])
 
@@ -45,7 +53,11 @@ useEffect(()=>{
                     <button className={`filter-btn ${filter === 'FIRST-FOOD' ? 'active__btn' : ''}`} onClick={()=>setFilter('FIRST-FOOD')}>Первые блюда</button>
                     <button className={`filter-btn ${filter === 'SECOND-FOOD' ? 'active__btn' : ''}`} onClick={()=>setFilter('SECOND-FOOD')}>Вторые блюда</button>
                     <button className={`filter-btn ${filter === 'MANGAL' ? 'active__btn' : ''}`} onClick={()=>setFilter('MANGAL')}>Мангал</button>
-                    <button className={`filter-btn ${filter === 'COFFEE' ? 'active__btn' : ''}`} onClick={()=>setFilter('COFFEE')}>Coffee</button>
+                    <button className={`filter-btn ${filter === 'SALAD' ? 'active__btn' : ''}`} onClick={()=>setFilter('SALAD')}>Салаты</button>
+                    <button className={`filter-btn ${filter === 'PIZZA' ? 'active__btn' : ''}`} onClick={()=>setFilter('PIZZA')}>Пицца и Бургеры</button>
+                    <button className={`filter-btn ${filter === 'DESSERT' ? 'active__btn' : ''}`} onClick={()=>setFilter('DESSERT')}>Десерты</button>
+                    <button className={`filter-btn ${filter === 'DRINK' ? 'active__btn' : ''}`} onClick={()=>setFilter('DRINK')}>Чай и Кофе</button>
+
                 </Col>
 
                 {

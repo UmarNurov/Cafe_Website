@@ -11,7 +11,7 @@ const PopularMenu = () => {
         <Container>
             <Row>
                 <Col lg='12' className='mb-5'>
-                    <h2 className='popular__menu-title'>Popular food menu</h2>
+                    <h2 className='popular__menu-title'>Популярные блюда</h2>
                 </Col>
                 {
                     popularMenuFood.map(item=>(

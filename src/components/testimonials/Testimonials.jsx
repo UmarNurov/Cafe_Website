@@ -23,7 +23,7 @@ const Testimonials = () => {
                 <Col lg='8' sm='12' md='12' className='m-auto'>
                     <div className="slider__wrapper d-flex align-items-center gap-5 ">
                         <div className="slider__content w-50">
-                            <h2 className='mb-4'>What our customers saying?</h2>
+                            <h2 className='mb-4'>Что говорят наши клиенты?</h2>
                             <Slider {...settings}>
                                 <div>
                                     <div className="single__testimonial">
@@ -33,8 +33,8 @@ const Testimonials = () => {
                                             nam vel maiores labore cupiditate unde ipsum aspernatur ea nihil, 
                                             neque quos libero reiciendis.
                                         </p>
-                                        <h6>John Doe</h6>
-                                        <p>Web Developer</p>
+                                        <h6>Anonymous</h6>
+                                        <p>Not Available</p>
                                     </div>
                                 </div>
                                 <div>
